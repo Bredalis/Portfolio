@@ -1,0 +1,352 @@
+
+* {
+	text-align: center;
+	color: whitesmoke;
+	font-family: 'Roboto Mono', monospace;
+}
+
+body {
+	background: #020c1b;
+}
+
+b {
+	color: #64FFDA;
+}
+
+a {
+	text-decoration: none;
+}
+
+h2 {
+	font-size: 40px;
+}
+
+img {
+    transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
+}
+
+img:hover {
+	transform: scale(1.1);
+}
+
+#home, img {
+	z-index: -1;
+}
+
+nav ul li, #proyectos ul li {
+	display: inline-block;
+}
+
+#home h4, #home h1 {
+	text-align: left;
+	position: relative;
+	left: 20%;
+}
+
+#home p, #sobre-mi p, #proyectos p {
+	text-align: left;
+}
+
+nav {
+	position: fixed;
+	background: #020c1b;
+	width: 100%;
+	margin-top: -85px;
+}
+
+nav ul li {
+	margin: 20px;
+}
+
+nav ul li a:hover {
+	color: #64FFDA;
+}
+
+#Logo {
+	max-width: 10%;
+	position: relative;
+	right: 50%;
+}
+
+#home {
+	margin: 5%;
+	position: relative;
+	right: 180px;
+}
+
+#home h4 {
+	font-size: 20px;
+}
+
+#home h1 {
+	font-size: 65px;
+}
+
+#home p {
+	width: 50%;
+	position: relative;
+	left: 20%;
+}
+
+#home button {
+	width: 20%;	
+	margin: 40px;
+	position: relative;
+	right: 240px;
+	background: #020c1b;
+	border-color: #64FFDA;
+	padding: 20px;
+	border-radius: 1rem;
+}
+
+#home button:hover {
+	border-color: whitesmoke;
+}
+
+#home button a {
+	color: #64FFDA;
+	font-size: 25px;
+}
+
+#home button a:hover {
+	color: whitesmoke;	
+}
+
+#sobre-mi {
+	margin: 5%;
+}
+
+#sobre-mi img {
+	max-width: 30%;
+	border-radius: 1rem;
+	float: right;
+	position: relative;
+	top: 200px;
+	right: 50px;
+}
+
+#sobre-mi p {
+	width: 40%;
+}
+
+#sobre-mi h3 {
+	text-align: left;
+}
+
+#sobre-mi ul li {
+	text-align: left;
+	list-style: none;
+}
+
+#proyectos {
+	margin: 10%;
+}
+
+#proyectos div {
+	margin-top: 160px;
+}
+
+#proyectos img {
+	max-width: 40%;
+	border-radius: 1rem;
+}
+
+#proyectos .imagen-derecha {
+	float: right;
+}
+
+#proyectos .imagen-izquierda {
+	float: left;
+}
+
+#proyectos section {
+	background: #0a192f;
+}
+
+#proyectos ul li {
+	margin: 8px;
+}
+
+#proyectos ul li a img {
+	max-width: 30px;
+	background-color: whitesmoke;
+	border-radius: 2rem;
+	padding: 10px;
+	position: relative;
+	top: 15px;
+}
+
+#contactos {
+	margin: 10%;
+}
+
+#contactos h1 {
+	margin-top: 50px;
+}
+
+#contactos button {
+	border-radius: 1rem;
+	margin-top: 40px;
+	border-color: #64FFDA;
+	padding: 5px;
+}
+
+#contactos button:hover {
+	border-color: whitesmoke;
+}
+
+#contactos img {
+	max-width: 30%;
+}
+
+/* Codigo Responsivo */
+
+@media (max-width: 1200px) {
+    #home h1 {
+        font-size: 55px;
+    }
+
+    #home p {
+        width: 60%;
+    }
+
+    #home button {
+        width: 30%;
+        right: 0;
+    }
+}
+
+@media (max-width: 992px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    #home h1 {
+        font-size: 45px;
+        left: 10%;
+    }
+
+    #home p {
+        width: 70%;
+        left: 10%;
+    }
+
+    #home button {
+        width: 40%;
+        right: 0;
+    }
+
+    #sobre-mi img {
+        max-width: 40%;
+        float: none;
+        margin: 20px auto;
+        top: 0;
+        right: 0;
+    }
+
+    #sobre-mi p {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    #home h1 {
+        font-size: 35px;
+    }
+
+    #home p {
+        width: 80%;
+        left: 10%;
+    }
+
+    #home button {
+        width: 50%;
+        right: 0;
+    }
+
+    #proyectos img {
+        max-width: 80%;
+        margin: 20px auto;
+        float: none;
+    }
+
+    #proyectos section {
+        padding: 20px;
+    }
+
+    #proyectos div {
+        margin-top: 60px;
+    }
+}
+
+@media (max-width: 576px) {
+    nav {
+        margin-top: 0;
+        padding: 10px 0;
+    }
+
+    #Logo {
+        max-width: 20%;
+        position: static;
+    }
+
+    #home h4 {
+        font-size: 18px;
+        left: 10%;
+    }
+
+    #home h1 {
+        font-size: 25px;
+        left: 10%;
+    }
+
+    #home p {
+        width: 90%;
+        left: 5%;
+    }
+
+    #home button {
+        width: 60%;
+        right: 0;
+    }
+
+    #sobre-mi h2 {
+        font-size: 30px;
+    }
+
+    #sobre-mi img {
+        max-width: 50%;
+    }
+
+    #sobre-mi p {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #proyectos img {
+        max-width: 90%;
+    }
+
+    #proyectos section {
+        padding: 10px;
+    }
+
+    #contactos h1 {
+        font-size: 25px;
+    }
+
+    #contactos button {
+        width: 60%;
+    }
+
+    #contactos p {
+        font-size: 14px;
+    }
+}

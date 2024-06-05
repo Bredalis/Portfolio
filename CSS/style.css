@@ -47,6 +47,8 @@ nav ul li, #proyectos ul li {
 	text-align: left;
 }
 
+/* Seccion de navegacion */
+
 nav {
 	position: fixed;
 	background: #020c1b;
@@ -74,6 +76,8 @@ nav ul li a:hover {
 	position: relative;
 	right: 50%;
 }
+
+/* Seccion de inicio */
 
 #home {
 	margin: 5%;
@@ -119,6 +123,8 @@ nav ul li a:hover {
 	color: whitesmoke;	
 }
 
+/* Seccion sobre mi */
+
 #sobre-mi {
 	margin: 5%;
 }
@@ -144,6 +150,8 @@ nav ul li a:hover {
 	text-align: left;
 	list-style: none;
 }
+
+/* Seccion de proyectos */
 
 #proyectos {
 	margin: 10%;
@@ -183,6 +191,8 @@ nav ul li a:hover {
 	top: 15px;
 }
 
+/* Seccion de contactos */
+
 #contactos {
 	margin: 10%;
 }
@@ -206,7 +216,7 @@ nav ul li a:hover {
 	max-width: 30%;
 }
 
-/* Codigo responsivo para barra de navegacion */
+/* Codigo responsivo */
 
 @media (max-width: 768px) {
     nav {

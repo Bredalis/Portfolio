@@ -54,6 +54,13 @@ nav {
 	margin-top: -85px;
 }
 
+nav #menu-btn {
+	position: relative;
+	top: 90px;
+	margin-right: 20px;
+	background-color: black;
+}
+
 nav ul li {
 	margin: 20px;
 }
@@ -199,47 +206,63 @@ nav ul li a:hover {
 	max-width: 30%;
 }
 
-/* Codigo Responsivo */
+/* Codigo responsivo para barra de navegacion */
 
-@media (max-width: 1200px) {
-    #home h1 {
-        font-size: 55px;
-    }
-
-    #home p {
-        width: 60%;
-    }
-
-    #home button {
-        width: 30%;
-        right: 0;
-    }
-}
-
-@media (max-width: 992px) {
-    nav ul {
+@media (max-width: 768px) {
+    nav {
         display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .menu-btn {
+        font-size: 30px;
+        background: none;
+        border: none;
+        color: #64FFDA;
+        cursor: pointer;
+    }
+
+    #nav-links {
+        display: none;
         flex-direction: column;
         align-items: center;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #020c1b;
+    }
+
+    #nav-links.show {
+        display: flex;
+    }
+
+    nav ul {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
     }
 
     nav ul li {
         margin: 10px 0;
     }
 
-    #home h1 {
-        font-size: 45px;
-        left: 10%;
+    #home h4, #home h1 {
+        font-size: 30px;
+        left: 50%;
     }
 
     #home p {
-        width: 70%;
-        left: 10%;
+        width: 80%;
+        left: 50%;
     }
 
     #home button {
-        width: 40%;
-        right: 0;
+        width: 50%;
+        left: 40%;
     }
 
     #sobre-mi img {
@@ -254,27 +277,28 @@ nav ul li a:hover {
         width: 80%;
         margin: 0 auto;
     }
-}
 
-@media (max-width: 768px) {
-    #home h1 {
-        font-size: 35px;
+    #sobre-mi h3 {
+    	text-align: center;
     }
 
-    #home p {
-        width: 80%;
-        left: 10%;
-    }
-
-    #home button {
-        width: 50%;
-        right: 0;
-    }
+    #proyectos h3 {
+    	margin: 20px;
+    }    
 
     #proyectos img {
         max-width: 80%;
         margin: 20px auto;
         float: none;
+        position: relative;
+    }    
+
+    #proyectos .imagen-izquierda {
+        left: 25px;
+    }   
+
+    #proyectos .imagen-derecha {
+        right: 25px;
     }
 
     #proyectos section {
@@ -283,70 +307,5 @@ nav ul li a:hover {
 
     #proyectos div {
         margin-top: 60px;
-    }
-}
-
-@media (max-width: 576px) {
-    nav {
-        margin-top: 0;
-        padding: 10px 0;
-    }
-
-    #Logo {
-        max-width: 20%;
-        position: static;
-    }
-
-    #home h4 {
-        font-size: 18px;
-        left: 10%;
-    }
-
-    #home h1 {
-        font-size: 25px;
-        left: 10%;
-    }
-
-    #home p {
-        width: 90%;
-        left: 5%;
-    }
-
-    #home button {
-        width: 60%;
-        right: 0;
-    }
-
-    #sobre-mi h2 {
-        font-size: 30px;
-    }
-
-    #sobre-mi img {
-        max-width: 50%;
-    }
-
-    #sobre-mi p {
-        width: 90%;
-        margin: 0 auto;
-    }
-
-    #proyectos img {
-        max-width: 90%;
-    }
-
-    #proyectos section {
-        padding: 10px;
-    }
-
-    #contactos h1 {
-        font-size: 25px;
-    }
-
-    #contactos button {
-        width: 60%;
-    }
-
-    #contactos p {
-        font-size: 14px;
     }
 }

@@ -58,8 +58,8 @@ nav {
 
 nav #menu-btn {
 	position: relative;
-	top: 90px;
-	margin-right: 20px;
+	top: 80px;
+	margin-right: 20%;
 	background-color: black;
 }
 
@@ -74,7 +74,7 @@ nav ul li a:hover {
 #Logo {
 	max-width: 10%;
 	position: relative;
-	right: 50%;
+	right: 60%;
 }
 
 /* Seccion de inicio */

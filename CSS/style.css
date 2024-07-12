@@ -2,7 +2,7 @@
 * {
 	text-align: center;
 	color: whitesmoke;
-	font-family: 'Roboto Mono', monospace;
+	font-family: "Roboto Mono", monospace;
 }
 
 body {
@@ -43,7 +43,7 @@ nav ul li, #proyectos ul li {
 	left: 20%;
 }
 
-#home p, #sobre-mi p, #proyectos p {
+#home p, #sobreMi p, #proyectos p {
 	text-align: left;
 }
 
@@ -125,11 +125,11 @@ nav ul li a:hover {
 
 /* Seccion sobre mi */
 
-#sobre-mi {
+#sobreMi {
 	margin: 5%;
 }
 
-#sobre-mi img {
+#sobreMi img {
 	max-width: 30%;
 	border-radius: 1rem;
 	float: right;
@@ -138,15 +138,15 @@ nav ul li a:hover {
 	right: 50px;
 }
 
-#sobre-mi p {
+#sobreMi p {
 	width: 40%;
 }
 
-#sobre-mi h3 {
+#sobreMi h3 {
 	text-align: left;
 }
 
-#sobre-mi ul li {
+#sobreMi ul li {
 	text-align: left;
 	list-style: none;
 }
@@ -234,7 +234,7 @@ nav ul li a:hover {
         cursor: pointer;
     }
 
-    #nav-links {
+    .nav-links {
         display: none;
         flex-direction: column;
         align-items: center;
@@ -245,7 +245,7 @@ nav ul li a:hover {
         background: #020c1b;
     }
 
-    #nav-links.show {
+    .nav-links.show {
         display: flex;
     }
 
@@ -275,7 +275,7 @@ nav ul li a:hover {
         left: 40%;
     }
 
-    #sobre-mi img {
+    #sobreMi img {
         max-width: 40%;
         float: none;
         margin: 20px auto;
@@ -283,12 +283,12 @@ nav ul li a:hover {
         right: 0;
     }
 
-    #sobre-mi p {
+    #sobreMi p {
         width: 80%;
         margin: 0 auto;
     }
 
-    #sobre-mi h3 {
+    #sobreMi h3 {
     	text-align: center;
     }
 

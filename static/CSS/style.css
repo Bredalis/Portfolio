@@ -5,6 +5,10 @@
 	font-family: "Roboto Mono", monospace;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	background: #020c1b;
 }
@@ -22,7 +26,7 @@ h2 {
 }
 
 img {
-    transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 img:hover {
@@ -83,6 +87,7 @@ nav ul li a:hover {
 	margin: 5%;
 	position: relative;
 	right: 180px;
+    margin-bottom: 8%;
 }
 
 #home h4 {
@@ -97,30 +102,6 @@ nav ul li a:hover {
 	width: 50%;
 	position: relative;
 	left: 20%;
-}
-
-#home button {
-	width: 20%;	
-	margin: 40px;
-	position: relative;
-	right: 240px;
-	background: #020c1b;
-	border-color: #64FFDA;
-	padding: 20px;
-	border-radius: 1rem;
-}
-
-#home button:hover {
-	border-color: whitesmoke;
-}
-
-#home button a {
-	color: #64FFDA;
-	font-size: 25px;
-}
-
-#home button a:hover {
-	color: whitesmoke;	
 }
 
 /* Seccion sobre mi */
@@ -212,13 +193,24 @@ nav ul li a:hover {
 	border-color: whitesmoke;
 }
 
-#contactos img {
-	max-width: 30%;
-}
-
 /* Codigo responsivo */
 
 @media (max-width: 768px) {
+    #home h1, #home h4, #home p {
+        text-align: center;
+        left: 0;
+    }
+    
+    nav ul li {
+        display: block;
+        text-align: center;
+    }
+
+    #Logo {
+        position: static;
+        margin: 0 auto;
+    }
+
     nav {
         display: flex;
         justify-content: space-between;

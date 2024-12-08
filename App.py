@@ -2,10 +2,7 @@
 from flask import Flask, render_template
 
 def portafolio():
-
 	app = Flask(__name__)
-
-	# Asignar las rutas de la página
 
 	@app.route("/")
 	def index():

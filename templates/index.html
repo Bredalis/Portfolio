@@ -8,216 +8,213 @@
 	<link rel="shortcut icon" href="{{ url_for('static', filename='IMG/Logo.png') }}" type="image/x-icon">
 </head>
 <body>
-
-	<nav>
-		<button class="menu-btn" id="menu-btn">☰</button>
-        <ul class="nav-links">
-			<li><a href="#"><img src="{{ url_for('static', filename='IMG/Logo.png') }}" title="Logo" id="Logo" alt="Logo de Bredalis"></a></li>
-			<li><a href="#home"><b>01.</b> Home</a></li>
-			<li><a href="#sobreMi"><b>02.</b> Sobre Mi</a></li>
-			<li><a href="#proyectos"><b>03.</b> Proyectos</a></li>
-			<li><a href="#contactos"><b>04.</b> Contactos</a></li>
-		</ul>
-	</nav>
-
-	<div id="home">
-		<br><br><br><br>
-		<h4>Hola, mi nombre es</h4>
-		<h1>Bredalis Gautreaux. <br> Y quiero revolucionar el <br> mundo de la IA.</h1>
-
-		<p>
-			Soy una chica apasionada por la programación, ¡es fascinante! Aunque aún no me he especializado, estoy aprendiendo en varias áreas como Desarrollo Web, Gestión de Bases de Datos, y Desarrollo Móvil, entre otras, para tener una base sólida cuando me enfoque en <b>NLP</b>, el área en la que planeo especializarme en un futuro cercano 😊. 
-		</p>
-	</div>
-
-	<div id="sobreMi">
-		<h2>
-			<b>02.</b> Sobre Mi <hr>
-		</h2>
-
-		<img src="{{ url_for('static', filename='IMG/Mi_Foto.jpeg') }}">
-		<br><br>
-		<p>
-			Hola! mi nombre es Bredalis y me encanta programar, pero con más énfasis en la Inteligencia Artificial y la AGI, tengo la meta de lograr ser parte de ese equipo que trabaja día y noche para crear la futura gran AGI 😊. A parte de la programación, me gusta la música, la psicología y las ciencias como algunos científicos populares, ya sean Albert Einstein, Alan Turing y muchos más.
-			<br><br><br>
-
-			Estoy programando hace ya <b>3 años</b> 👩🏻‍💻 y actualmente estoy estudiando 📖 en el <b>técnico de Informática del liceo Sergio Augusto Beras.</b>
-		</p>
-
-		<h3>Tecnologías que domino:</h3>
-		<ul>
-			<li>✔ <b>Lenguajes:</b> Python, HTML, CSS y JavaScript</i>
-			<li>✔ <b>Frameworks y Librerías:</b> Flask, Tkinter, OS, Numpy, Pandas, Matplotlib ...</li>
-			<li>✔ <b>Bases de Datos:</b> SQLite, MySQL y MongoDB</li>				
-			<li>✔ <b>Herramientas de Control:</b> Git y GitHub</li>				
-		</ul>
-
-		<h3>Habilidades blandas:</h3>
-		<ul>
-			<li>✔ Liderazgo</li>
-			<li>✔ Inteligencia Emocional</li>
-			<li>✔ Adaptabilidad</li>
-			<li>✔ Trabajo en Equipo</li>
-		</ul>
-
-		<h3>Habilidades que estoy aprendiendo:</h3>
-		<ul>
-			<li>✔ Patrones De Diseño</li>
-			<li>✔ Docker y Kubernetes</li>
-			<li>✔ Depuración de codigo</li>
-			<li>✔ Testing</li>
-		</ul>
-
-		<h3><b>Experiencia:</b></h3>
-		<p>
-			Realmente no cuento con ninguna experiencia laboral, pero eso no me desanima a seguir trabajando duro 💪🏻 para aprender más sobre la programación.
-		</p>		
-	</div>
-
-	<div id="proyectos">
-		<h2><b>03.</b> Algunos proyectos que he construido</h2>
-		<hr>
-
-		<div>
-			<a href="https://informatikspace.onrender.com/" target="_blank">
-				<img src="{{ url_for('static', filename='IMG/InformatikSpace.png') }}" class="imagen-izquierda">
-			</a>
-
-			<h3><b>Blog Para Programadores</b></h3>
-
-			<a href="https://informatikspace.onrender.com/" target="_blank">
-				<h2>InformatikSpace - Blog 👩🏻‍💻</h2>
-			</a>
-
-			<section>
-				<p>
-					Es una plataforma dedicada a los entusiastas de la informática y la programación. Proporciona un espacio para que los usuarios compartan artículos, gestionen sus publicaciones, y interactúen con chatbots especializados en informática.
-				</p>
-			</section>
-
-			<ul>
-				<li>HTML</li>
-				<li>CSS</li>
-				<li>JavaScript</li>
-				<li>Flask</li>	
-				<li>Jinja</li>							
-				<li>
-					<a href="https://github.com/Bredalis/InformatikSpace" target="_blank">
-						<img src="{{ url_for('static', filename='IMG/GitHub.png') }}" height="40">
-					</a>
-			    </li>
+	<header>
+		<nav>
+			<button class="menu-btn" id="menu-btn">☰</button>
+	        <ul class="nav-links">
+				<li><a href="#"><img src="{{ url_for('static', filename='IMG/Logo.png') }}" title="Logo" id="Logo" alt="Logo de Bredalis"></a></li>
+				<li><a href="#home"><b>01.</b> Home</a></li>
+				<li><a href="#sobreMi"><b>02.</b> Sobre Mí</a></li>
+				<li><a href="#proyectos"><b>03.</b> Proyectos</a></li>
+				<li><a href="#contactos"><b>04.</b> Contactos</a></li>
 			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<div id="home">
+			<br><br><br><br>
+			<h4>Hola, mi nombre es</h4>
+			<h1>Bredalis Gautreaux. <br> Y quiero revolucionar el <br> mundo de la IA.</h1>
+
+			<p>
+				Soy una chica apasionada por la programación, ¡es fascinante! Aunque aún no me he especializado, estoy aprendiendo en varias áreas como Desarrollo Web, Gestión de Bases de Datos, y Desarrollo Móvil, entre otras, para tener una base sólida cuando me enfoque en <b>NLP</b>, el área en la que planeo especializarme en un futuro cercano 😊. 
+			</p>
 		</div>
 
-		<div>
-			<a href="https://pagetelecare.onrender.com/" target="_blank">
-				<img src="{{ url_for('static', filename='IMG/PageTeleCare.png') }}" class="imagen-derecha">
-			</a>
+		<div id="sobreMi">
+			<h2>
+				<b>02.</b> Sobre Mi <hr>
+			</h2>
 
-			<h3><b>Página De Salud</b></h3>
+			<img src="{{ url_for('static', filename='IMG/Mi_Foto.jpeg') }}">
+			<br><br>
+			<p>
+				Hola! mi nombre es Bredalis y me encanta programar, pero con más énfasis en la Inteligencia Artificial y la AGI, tengo la meta de lograr ser parte de ese equipo que trabaja día y noche para crear la futura gran AGI 😊. A parte de la programación, me gusta la música, la psicología y las ciencias como algunos científicos populares, ya sean Albert Einstein, Alan Turing y muchos más.
+				<br><br><br>
 
-			<a href="https://pagetelecare.onrender.com/" target="_blank">
-				<h2>PageTeleCare 👨🏻‍⚕️</h2>
-			</a>
+				Estoy programando hace ya <b>3 años</b> 👩🏻‍💻 y actualmente estoy estudiando 📖 en el <b>técnico de Informática del liceo Sergio Augusto Beras.</b>
+			</p>
 
-			<section>
-				<p>
-					Nuestra página está diseñada para ofrecer asistencia médica rápida y eficiente a través de chatbots especializados. Estos chatbots están programados para proporcionar orientación y apoyo en diversas áreas de la salud
-				</p>
-			</section>
-
+			<h3>Tecnologías que domino:</h3>
 			<ul>
-				<li>HTML</li>
-				<li>CSS</li>
-				<li>Flask</li>				
-				<li>Hugging Assistants</li>				
-				<li>
-					<a href="https://github.com/Bredalis/PageTeleCare" target="_blank"><img src="{{ url_for('static', filename='IMG/GitHub.png') }}"></a>
-				</li>
+				<li>✔ <b>Lenguajes:</b> Python, HTML, CSS y JavaScript</i>
+				<li>✔ <b>Frameworks y Librerías:</b> Flask, Tkinter, OS, Numpy, Pandas, Matplotlib ...</li>
+				<li>✔ <b>Bases de Datos:</b> SQLite, MySQL y MongoDB</li>				
+				<li>✔ <b>Herramientas de Control:</b> Git y GitHub</li>				
 			</ul>
+
+			<h3>Habilidades blandas:</h3>
+			<ul>
+				<li>✔ Liderazgo</li>
+				<li>✔ Inteligencia Emocional</li>
+				<li>✔ Adaptabilidad</li>
+				<li>✔ Trabajo en Equipo</li>
+			</ul>
+
+			<h3>Habilidades que estoy aprendiendo:</h3>
+			<ul>
+				<li>✔ Patrones De Diseño</li>
+				<li>✔ Docker y Kubernetes</li>
+				<li>✔ Depuración de codigo</li>
+				<li>✔ Testing</li>
+			</ul>
+
+			<h3><b>Experiencia:</b></h3>
+			<p>
+				Realmente no cuento con ninguna experiencia laboral, pero eso no me desanima a seguir trabajando duro 💪🏻 para aprender más sobre la programación.
+			</p>		
 		</div>
+		<div id="proyectos">
+			<h2><b>03.</b> Algunos proyectos que he construido</h2>
+			<hr>
+			<div>
+				<a href="https://informatikspace.onrender.com/" target="_blank">
+					<img src="{{ url_for('static', filename='IMG/InformatikSpace.png') }}" class="imagen-izquierda">
+				</a>
 
-		<div>
-			<a href="https://todolist-se88.onrender.com/" target="_blank">
-				<img src="{{ url_for('static', filename='IMG/To_Do_List.png') }}" class="imagen-izquierda">
-			</a>
+				<h3><b>Blog Para Programadores</b></h3>
 
-			<h3><b>Página Web</b></h3>
+				<a href="https://informatikspace.onrender.com/" target="_blank">
+					<h2>InformatikSpace - Blog 👩🏻‍💻</h2>
+				</a>
 
-			<a href="https://todolist-se88.onrender.com/" target="_blank">
-				<h2>To Do List 🧾</h2>
-			</a>
+				<section>
+					<p>
+						Es una plataforma dedicada a los entusiastas de la informática y la programación. Proporciona un espacio para que los usuarios compartan artículos, gestionen sus publicaciones, y interactúen con chatbots especializados en informática.
+					</p>
+				</section>
 
-			<section>
-				<p>
-					Esta es una página donde el usuario puede ingresar, borrar y completar tareas. Es una página bastante sencilla, pero funcional.
-				</p>
-			</section>
+				<ul>
+					<li>HTML</li>
+					<li>CSS</li>
+					<li>JavaScript</li>
+					<li>Flask</li>	
+					<li>Jinja</li>							
+					<li>
+						<a href="https://github.com/Bredalis/InformatikSpace" target="_blank">
+							<img src="{{ url_for('static', filename='IMG/GitHub.png') }}" height="40">
+						</a>
+				    </li>
+				</ul>
+			</div>
+			<div>
+				<a href="https://pagetelecare.onrender.com/" target="_blank">
+					<img src="{{ url_for('static', filename='IMG/PageTeleCare.png') }}" class="imagen-derecha">
+				</a>
 
-			<ul>
-				<li>HTML</li>
-				<li>CSS</li>
-				<li>Flask</li>
-				<li>
-					<a href="https://github.com/Bredalis/ToDoList" target="_blank"><img src="{{ url_for('static', filename='IMG/GitHub.png') }}"></a>
-				</li>
-			</ul>
+				<h3><b>Página De Salud</b></h3>
+
+				<a href="https://pagetelecare.onrender.com/" target="_blank">
+					<h2>PageTeleCare 👨🏻‍⚕️</h2>
+				</a>
+
+				<section>
+					<p>
+						Nuestra página está diseñada para ofrecer asistencia médica rápida y eficiente a través de chatbots especializados. Estos chatbots están programados para proporcionar orientación y apoyo en diversas áreas de la salud
+					</p>
+				</section>
+
+				<ul>
+					<li>HTML</li>
+					<li>CSS</li>
+					<li>Flask</li>				
+					<li>Hugging Assistants</li>				
+					<li>
+						<a href="https://github.com/Bredalis/PageTeleCare" target="_blank"><img src="{{ url_for('static', filename='IMG/GitHub.png') }}"></a>
+					</li>
+				</ul>
+			</div>
+			<div>
+				<a href="https://todolist-se88.onrender.com/" target="_blank">
+					<img src="{{ url_for('static', filename='IMG/To_Do_List.png') }}" class="imagen-izquierda">
+				</a>
+
+				<h3><b>Página Web</b></h3>
+
+				<a href="https://todolist-se88.onrender.com/" target="_blank">
+					<h2>To Do List 🧾</h2>
+				</a>
+
+				<section>
+					<p>
+						Esta es una página donde el usuario puede ingresar, borrar y completar tareas. Es una página bastante sencilla, pero funcional.
+					</p>
+				</section>
+
+				<ul>
+					<li>HTML</li>
+					<li>CSS</li>
+					<li>Flask</li>
+					<li>
+						<a href="https://github.com/Bredalis/ToDoList" target="_blank"><img src="{{ url_for('static', filename='IMG/GitHub.png') }}"></a>
+					</li>
+				</ul>
+			</div>
+			<div>
+				<a href="https://github.com/Bredalis/AquaAlert" target="_blank">
+					<img src="{{ url_for('static', filename='IMG/AquaAlert.png') }}" class="imagen-derecha">
+				</a>
+
+				<h3><b>Interfaz</b></h3>
+
+				<h2>AquaAlert 💧</h2>
+
+				<section>
+					<p>
+						Esta es una interfaz parecida a una app que alerta al usuario para que recuerde beber agua.
+					</p>
+				</section>
+
+				<ul>
+					<li>Python</li>
+					<li>Kivy</li>
+					<li>
+						<a href="https://github.com/Bredalis/AquaAlert" target="_blank"><img src="{{ url_for('static', filename='IMG/GitHub.png') }}" height="50"></a>
+					</li>
+				</ul>
+			</div>
+			<div>
+				<a href="https://github.com/Bredalis/SnakeGame" target="_blank">
+					<img src="{{ url_for('static', filename='IMG/SnakeGame.png') }}" class="imagen-izquierda">
+				</a>
+
+				<h3><b>Juego de la Serpiente</b></h3>
+
+				<a href="https://github.com/Bredalis/SnakeGame" target="_blank">
+					<h2>SnakeGame 🐍</h2>
+				</a>
+
+				<section>
+					<p>
+						Este repositorio contiene una colección de archivos simples escritos en Python 🐍 junto a su librería PyGame con la propuesta de crear el juego de la serpiente de una forma fácil y clara.
+					</p>
+				</section>
+
+				<ul>
+					<li>Python</li>
+					<li>PyGame</li>
+					<li>PyMongo</li>				
+					<li>SQLite3</li>				
+					<li>
+						<a href="https://github.com/Bredalis/SnakeGame" target="_blank"><img src="{{ url_for('static', filename='IMG/GitHub.png') }}"></a>
+					</li>
+				</ul>
+			</div>		
 		</div>
+	</main>
 
-		<div>
-			<a href="https://github.com/Bredalis/AquaAlert" target="_blank">
-				<img src="{{ url_for('static', filename='IMG/AquaAlert.png') }}" class="imagen-derecha">
-			</a>
-
-			<h3><b>Interfaz</b></h3>
-
-			<h2>AquaAlert 💧</h2>
-
-			<section>
-				<p>
-					Esta es una interfaz parecida a una app que alerta al usuario para que recuerde beber agua.
-				</p>
-			</section>
-
-			<ul>
-				<li>Python</li>
-				<li>Kivy</li>
-				<li>
-					<a href="https://github.com/Bredalis/AquaAlert" target="_blank"><img src="{{ url_for('static', filename='IMG/GitHub.png') }}" height="50"></a>
-				</li>
-			</ul>
-		</div>
-
-		<div>
-			<a href="https://github.com/Bredalis/SnakeGame" target="_blank">
-				<img src="{{ url_for('static', filename='IMG/SnakeGame.png') }}" class="imagen-izquierda">
-			</a>
-
-			<h3><b>Juego de la Serpiente</b></h3>
-
-			<a href="https://github.com/Bredalis/SnakeGame" target="_blank">
-				<h2>SnakeGame 🐍</h2>
-			</a>
-
-			<section>
-				<p>
-					Este repositorio contiene una colección de archivos simples escritos en Python 🐍 junto a su librería PyGame con la propuesta de crear el juego de la serpiente de una forma fácil y clara.
-				</p>
-			</section>
-
-			<ul>
-				<li>Python</li>
-				<li>PyGame</li>
-				<li>PyMongo</li>				
-				<li>SQLite3</li>				
-				<li>
-					<a href="https://github.com/Bredalis/SnakeGame" target="_blank"><img src="{{ url_for('static', filename='IMG/GitHub.png') }}"></a>
-				</li>
-			</ul>
-		</div>		
-	</div>
-
-	<div id="contactos">
+	<footer>
 		<h2><b>04.</b> ¿Algo más?</h2>
 
 		<h1>Contácteme 😁</h1>
@@ -240,7 +237,7 @@
 		</button>
 
 		<p>bredalisgautreaux@gmail.com</p>		
-	</div>
+	</footer>
 
 	<script src="{{ url_for('static', filename='JS/main.js') }}"></script>
 </body>

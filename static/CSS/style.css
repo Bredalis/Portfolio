@@ -51,8 +51,7 @@ nav ul li, #proyectos ul li {
 	text-align: left;
 }
 
-/* Seccion de navegacion */
-
+/* Sección de navegación */
 nav {
 	position: fixed;
 	background: #020c1b;
@@ -81,8 +80,7 @@ nav ul li a:hover {
 	right: 60%;
 }
 
-/* Seccion de inicio */
-
+/* Sección de inicio */
 #home {
 	margin: 5%;
 	position: relative;
@@ -104,8 +102,7 @@ nav ul li a:hover {
 	left: 20%;
 }
 
-/* Seccion sobre mi */
-
+/* Sección sobre mí */
 #sobreMi {
 	margin: 5%;
 }
@@ -132,8 +129,7 @@ nav ul li a:hover {
 	list-style: none;
 }
 
-/* Seccion de proyectos */
-
+/* Sección de proyectos */
 #proyectos {
 	margin: 10%;
 }
@@ -172,29 +168,27 @@ nav ul li a:hover {
 	top: 15px;
 }
 
-/* Seccion de contactos */
-
-#contactos {
+/* Sección de contactos */
+footer {
 	margin: 10%;
 }
 
-#contactos h1 {
+footer h1 {
 	margin-top: 50px;
 }
 
-#contactos button {
+footer button {
 	border-radius: 1rem;
 	margin-top: 40px;
 	border-color: #64FFDA;
 	padding: 5px;
 }
 
-#contactos button:hover {
+footer button:hover {
 	border-color: whitesmoke;
 }
 
-/* Codigo responsivo */
-
+/* Código responsivo */
 @media (max-width: 768px) {
     #home h1, #home h4, #home p {
         text-align: center;
